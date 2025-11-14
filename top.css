@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*----------home css---------------*/
+
+#slide {
+width: 100%;
+	height: auto;
+	max-width: 900px;
+}
+
+p{
+	font-size: 1.0625rem;
+	
+}
+
+.contents{
+	display: flex;
+	gap:50px;
+	margin-top: 50px ;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.text{
+	margin: 0 auto;
+	line-height: 1.5rem;
+}
+
+
+#slide{
+	position:relative;
+	overflow:hidden;
+	height:400px;
+}
+
+#slide ul{
+	position: absolute;
+	width: 2700px;/*900x3枚*/
+}
+
+#slide li{
+	float: left;
+	width: 900px;
+	list-style-type: none;
+}
+
+/*残念ながらSP版でスライドショーを縮小できませんでした*/
+.sp { 
+	display: none !important; 
+}
+
+@media only screen and (max-width: 700px) {
+    .sp { display: block !important; }
+}
+
+
+
