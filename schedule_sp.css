@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media(max-width: 700px){
+}
+
+.wrapper{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+header{
+	margin: 0;
+	
+}
+header p{
+	margin-bottom:30px;
+	font-size: 0.875rem;
+}
+nav ul li{
+	margin-left:0;
+}
+
+nav ul{
+	display: block;
+	margin-top:10px;
+	margin-left:0;
+	font-size: 1.125rem;
+	
+}
+nav ul li{
+	margin-left:0;
+	padding:10px;
+}		
+.contents{
+	display: block;
+}
+
+/*�ȏ�header----------------------------------------*/
+
+.schedule{
+	margin: 0 auto;
+		
+}
+
+.schedule p{
+	/*margin: 20px 80px;*/
+	margin: 20px 30px;
+}
+
+.move{
+	position: fixed;/*�摜���������đΉ��ł��邩�H*/
+	width: 10%;
+	left: 35%;
+
+}
+
