@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*----------profile css---------------*/
+
+table{
+	border-collapse: collapse;
+	margin-left: 50px;
+}
+td ,th{
+	border-bottom: 1px solid black;
+	letter-spacing: -0.2px;
+}
+td{
+	padding-left: 40px;
+}
+.profile{
+	display: flex;
+	margin-bottom: 50px;
+	
+}
+.star{
+	gap: 90px;
+	align-items: center;
+	justify-content: center;
+	line-height: 30px;
+
+}
+.next_star{
+	text-align: right;
+	margin: 20px 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+html{
+	font-size: 16px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.wrapper{
+	width: 100%;
+	height: auto;
+	max-width: 900px;
+	margin: 0 auto;
+}	
+/*
+a{
+	text-decoration: none;
+}
+*/
+
+header h1{
+	padding: 20px 50px;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+header p,li{
+	font-size: 1.25rem;
+}
+
+header p{
+	margin: 20px 50px;
+	font-size: 1.25rem;
+	font-weight: bold;
+
+}
+
+nav ul{
+	display: flex;
+	justify-content:flex-end;
+	font-size: 1.125rem;
+}
+
+nav ul li{
+	margin:10px 20px;
+}
+/*�ȏ�common.css------------------------------------------*/
+/*�ȉ�introduction.css------------------------------------------*/
+
+:root{
+	--color-wh: #ffffff;
+}
+.sp_br {
+	display: none; /*700px以上では改行タグを無効に。*/
+}
+@media screen and (max-width: 700px) {
+	.sp_br {
+	display: block; /*700px未満で改行タグを有効に。*/
+  }
+}
+
+#starlight{
+	background-image: url(../images/light.jpg);
+	background-position: 0px -150px;
+	background-size: 100%;
+	color: var(--color-wh);
+}
+
+ul li a{
+	color: var(--color-wh);
+}
+
+ul li a:hover{
+	text-shadow:5px  0 5px red;
+}
+
+.light{
+	text-align: center;
+}
+.title{
+	padding: 10px 0;
+}
+.title p{
+	line-height: 2rem;
+}
+
+h3{
+	margin: 50px 0;
+	font-size: 2.25rem;
+}
+
+.song p{
+	padding: 30px 0;
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+}
+/*�ȏ�introduction----�ȉ�JS------------------------------------*/
+	
+.anime-catchcopy .copy-1,
+.anime-catchcopy .copy-2,
+.anime-catchcopy .copy-3,
+.anime-catchcopy .copy-4,
+.anime-catchcopy .copy-5
+ {
+ opacity: 0;
+}
+
+.anime-catchcopy.active .copy-1 {
+ -webkit-animation-name: copyFade1;
+ animation-name: copyFade1;
+ -webkit-animation-duration: 10s;/*　s は秒　*/
+ animation-duration: 10s;/*1 回のアニメーションの周期にかかる時間*/
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;/*アニメーションが変化する速度*/
+ -webkit-animation-delay: 0s;
+ animation-delay: 0s;/*ページが表示されてからアニメーションが開始するまでの時間*/
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;/*アニメーションを実行する回数を指定します*/
+ -webkit-animation-direction: normal;
+ animation-direction: normal;/*アニメーション再生の向きを順方向、逆方向、前後反転のいずれにするか*/
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;/*アニメーション再生中・再生後のスタイルを指定します*/
+ -webkit-animation-play-state: running;
+ animation-play-state: running;/*アニメーションが再生中か一時停止状態かを指定します*/
+}
+
+.anime-catchcopy.active .copy-2 {
+ -webkit-animation-name: copyFade2;
+ animation-name: copyFade2;
+ -webkit-animation-duration: 10s;
+ animation-duration: 10s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 5s;
+ animation-delay: 5s;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+ -webkit-animation-direction: normal;
+ animation-direction: normal;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+ -webkit-animation-play-state: running;
+ animation-play-state: running;
+}
+
+
+
+.anime-catchcopy.active .copy-3 {
+ -webkit-animation-name: copyFade3;
+ animation-name: copyFade3;
+ -webkit-animation-duration: 10s;
+ animation-duration: 10s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 10s;
+ animation-delay: 10s;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+ -webkit-animation-direction: normal;
+ animation-direction: normal;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+ -webkit-animation-play-state: running;
+ animation-play-state: running;
+}
+
+.anime-catchcopy.active .copy-4 {
+ -webkit-animation-name: copyFade3;
+ animation-name: copyFade3;
+ -webkit-animation-duration: 10s;
+ animation-duration: 10s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 15s;
+ animation-delay: 15s;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+ -webkit-animation-direction: normal;
+ animation-direction: normal;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+ -webkit-animation-play-state: running;
+ animation-play-state: running;
+}
+
+.anime-catchcopy.active .copy-5 {
+ -webkit-animation-name: copyFade3;
+ animation-name: copyFade3;
+ -webkit-animation-duration: 10s;
+ animation-duration: 10s;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 22s;
+ animation-delay: 22s;
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+ -webkit-animation-direction: normal;
+ animation-direction: normal;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+ -webkit-animation-play-state: running;
+ animation-play-state: running;
+}
+
+@keyframes copyFade1 {
+ 0% {
+  opacity: 0;
+  -webkit-transform:translateY(20px);/*要素をX水平方向やY垂直方向に移動する*/
+  transform:translateY(20px)
+ }
+ 100% {
+  opacity: 1;
+  -webkit-transform:translateY(0px);
+  transform:translateY(0px)
+ }
+}
+
+@keyframes copyFade2 {
+ 0% {
+  opacity: 0;
+  -webkit-transform:translateY(40px);
+  transform:translateY(40px)
+ }
+ 100% {
+  opacity: 1;
+  -webkit-transform:translateY(0px);
+  transform:translateY(0px)
+ }
+}
+
+
+@keyframes copyFade3 {
+ 0% {
+  opacity: 0;
+  -webkit-transform:translateY(60px);
+  transform:translateY(60px)
+ }
+ 100% {
+  opacity: 1;
+  -webkit-transform:translateY(0px);
+  transform:translateY(0px)
+ }
+}
+
+@keyframes copyFade4 {
+ 0% {
+  opacity: 0;
+  -webkit-transform:translateY(80px);
+  transform:translateY(80px)
+ }
+ 100% {
+  opacity: 1;
+  -webkit-transform:translateY(0px);
+  transform:translateY(0px)
+ }
+}
+
+@keyframes copyFade5 {
+ 0% {
+  opacity: 0;
+  -webkit-transform:translateY(100px);
+  transform:translateY(100px)
+ }
+ 100% {
+  opacity: 1;
+  -webkit-transform:translateY(0px);
+  transform:translateY(0px)
+ }
+}
+/* js---------------------------------------*/
+
+anime-catchcopy p{
+	font-size: 2.5rem;
+}
+
+.copy-1,.copy-2,.copy-3,.copy-4,.copy-5{
+	font-size: 1.25rem;
+	padding: 10px;
+}
+
+footer{
+	text-align: center;
+}
+footer ul{
+	padding: 20px 0;
+}
+
+footer li{
+	display: inline-block;
+	padding: 5px 20px;
+}
+
+footer p{
+	padding:10px 0;
+	
+}
+

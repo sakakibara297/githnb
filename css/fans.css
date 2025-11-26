@@ -1,0 +1,88 @@
+@charset "utf-8";
+h2{
+	margin-top: 0;
+}
+main{
+	padding: 50px 0;
+}
+#center{
+	display: flow-root;/*floatの回り込み解除* floatをかけた要素の箱となっている<div>にかける:*/
+}
+
+.co_a{
+	width: 70%;/*メインコンテンツの幅*/
+	float: left;
+	text-align: center;
+	display: grid;/*コンテンツが横に並び、入りきらなければ下に落ちる*/
+	grid-template-columns: 1fr 1fr;
+
+}
+.co_a p{
+	margin: 15px 0;
+}
+.co_a img{
+	 box-shadow: 7px 0 7px #afeeee;/*#afeeeeのちに*/
+}
+.co_b{
+	width: 30%;
+	float: right;
+}
+
+.co_b p{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 1.25rem;
+	font-weight: bold;
+
+}
+
+/*以上グッズーーーーーーー以下ファンクラブーーーーーーーーーーーーーーーー*/
+
+.fan{
+	float: left;
+}
+
+.fan p{
+	line-height: 1.5rem;
+	padding-bottom: 3px;
+
+}
+
+.special {
+	font-size: 1.25rem;
+	margin: 5px 30px;
+}
+
+h4{
+	font-size: 1.25rem;
+	margin:30px 0;
+}
+
+.special:first-letter{
+ font-size:1.2em;
+ color:#2F5597;
+}
+
+form div{
+	margin: 10px 30px;
+}
+.btn{
+	padding-left: 150px;
+}
+.btn input{
+	color: #c71585 ;
+}
+.starphoto{
+	float: right;
+}
+.starstar{
+	display: flow-root;
+	margin: 0 80px; 
+}
+
+/*
+.foot{
+ clear: both;
+ display: flow-root;
+}
+*/

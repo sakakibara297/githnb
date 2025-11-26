@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*----------schedule css---------------*/
+
+.sp_br {
+	display: none; /*700px以上では改行タグを無効に。*/
+}
+@media screen and (max-width: 700px) {
+	.sp_br {
+	display: block; /*700px未満で改行タグを有効に。*/
+  }
+}
+h2{
+	margin-top: 0;
+}
+
+main{
+	padding: 50px 0;
+}
+
+.schedule p{
+	margin: 20px 80px;
+}
+
+
+.move{
+	position: fixed;
+	top: 300px; 
+	right: 250px;
+	z-index: 1;
+}
+
+.move img{
+	width: 70%;
+}
+
+header,footer{
+	z-index: 2;
+}
+footer li{
+	display: inline-block;
+}

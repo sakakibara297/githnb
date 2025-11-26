@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.center{
+	margin: 0 auto;
+}
+
+.co_a,.co_b{
+	width: 100%;
+	float: none; 
+
+}
+.co_a{
+	display: block;/*コンテンツが横に並び、入りきらなければ下に落ちる*/
+}
+
+.co_b p{
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+.fan{
+	margin: 0;	
+}
+
+.btn{
+	padding-left: 0;
+}
+
+.starstar{
+	margin: 0;
+}
+
+.starphoto,.fan{
+	float: none;
+}
